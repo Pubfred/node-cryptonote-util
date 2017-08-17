@@ -15,7 +15,7 @@ static void (*const extra_hashes[4])(const void *, size_t, char *) = {
   hash_extra_blake, hash_extra_groestl, hash_extra_jh, hash_extra_skein
 };
 
-#define MEMORY         (1 << 21) /* 2 MiB */
+#define MEMORY         (1 << 20) /* 1 MiB */
 #define ITER           (1 << 20)
 #define AES_BLOCK_SIZE  16
 #define AES_KEY_SIZE    32 /*16*/
